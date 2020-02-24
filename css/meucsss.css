@@ -9,3 +9,76 @@
 {
         background:#53a7ea;
 }
+
+/* Se for copiar, copie a partir daqui */
+
+.btn-whats{
+  color: white;
+  text-decoration: none;
+  padding: 45px;
+  top: 85%;
+  left: 90%;
+  position: fixed;
+  transition: all .6s;
+  animation: 2s btn-whats;
+  animation-fill-mode: both;
+  animation-iterative-count: 1;
+  z-index: 1;
+}.btn-whats:hover{
+ 
+}
+
+.pulse{
+  animation: pulse 2s infinite;
+}
+
+
+
+@media only screen and (min-width: 900px){
+  .btn-whats{
+    left: 92%;
+  }
+  
+
+}
+
+@media only screen and (max-width: 700px){
+  .btn-whats{
+    left: 85%;
+  }
+  h1{
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .btn-whats{
+    left: 80%;
+  }
+  
+}
+
+@media only screen and (max-width: 350px){
+  .btn-whats{
+    left: 75%;
+  }
+}
+/* Animações */
+@keyframes btn-whats{
+  10%{
+    transform: translate(0, 200px); 
+  }
+  50%{
+    transform: translate(0, -40px);
+  }
+  
+  70%{
+    transform: scale(1.1);
+  }
+}
+
+@keyframes pulse {
+  50%{
+    transform: scale(1.1);
+  }
+}
